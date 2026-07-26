@@ -1,110 +1,148 @@
-# Analyzing-the-Relationship-Between-Social-Media-Usage-and-Mental-Health-in-Young-People
+# 📊 Teen Mental Health: An Exploratory Data Analysis Using Python
 
-## Overview
+## Project Overview
 
-This project explores the relationship between social media usage and mental health indicators in young people. The analysis focuses on identifying patterns and potential correlations between time spent on social media and indicators such as anxiety and depression.
+This project explores the relationship between social media usage and mental health indicators among teenagers using Python for exploratory data analysis (EDA) and statistical analysis.
 
-## Business Context
+The objective is not to prove causality, but to identify potential relationships between behavioral variables such as daily social media usage, sleep duration, and mental health outcomes including anxiety, stress, addiction, and depression.
 
-Understanding how digital behavior impacts mental health is increasingly relevant for educational institutions, organizations, and digital platforms. Insights from this analysis can support the development of strategies to improve student well-being and promote healthier digital habits.
+---
 
-## Objective
+## Business Question
 
-The objective of this project is to analyze whether higher levels of social media usage are associated with changes in mental health indicators.
+Can daily social media usage help explain differences in teenagers' mental health?
 
-Key questions:
-- Is there a relationship between time spent on social media and anxiety levels?
-- Are there thresholds where mental health indicators worsen?
-- How does variability change across different usage groups?
+More specifically, this project investigates:
 
-## Raw data
+- Is increased social media usage associated with higher anxiety?
+- Does spending more time on social media reduce sleep duration?
+- Which variables show the strongest relationship with depression?
+- What patterns emerge from exploratory data analysis?
 
-The analysis is based on two independent datasets:
+---
 
-- Social media usage dataset  
-- Mental health indicators dataset
-  
-## Clean data
+## Dataset
+
+The dataset contains **1,200 observations** describing teenagers' demographic characteristics, social media habits, lifestyle variables, and mental health indicators.
+
+### Main Variables
+
+- Age
+- Gender
+- Daily Social Media Hours
+- Platform Usage
+- Sleep Hours
+- Screen Time Before Sleep
+- Academic Performance
+- Physical Activity
+- Social Interaction Level
+- Stress Level
+- Anxiety Level
+- Addiction Level
+- Depression Label
+
+---
+
+## Project Workflow
+
+The project follows a complete data analysis workflow:
+
+1. Business Understanding
+2. Data Loading
+3. Data Quality Assessment
+4. Exploratory Data Analysis (EDA)
+5. Correlation Analysis
+6. Relationship Between Social Media Usage and Anxiety
+7. Conclusions
+
+---
+
+## Tools & Technologies
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- SciPy
+- Scikit-Learn
+- Jupyter Notebook
+
+---
+
+## Key Findings
+
+The analysis identified several important observations:
+
+- Most variables exhibited **weak linear correlations**.
+- Daily social media usage showed only a weak association with anxiety.
+- Sleep duration presented a slight negative relationship with depression.
+- Stress and anxiety displayed small positive relationships with depression.
+- The dataset suggests that adolescent mental health is influenced by multiple interacting factors rather than a single behavioral variable.
+
+---
+
+## Limitations
+
+The results should be interpreted carefully due to several limitations:
+
+- Correlation does not imply causation.
+- The analysis is based on a single dataset.
+- Several relevant psychological and environmental factors were not available.
+- The relatively uniform distributions observed across variables suggest that the dataset may have been generated or balanced for educational purposes.
+
+---
+
+## Executive Presentation
+
+A concise executive presentation summarizing the analysis and key findings is included in this repository.
+
+📁 `presentation/Executive_Summary.pdf`
+
+---
+
+## Repository Structure
+
 ```
+Teen-Mental-Health-EDA/
 │
-├── 01_mental_health_usage_groups.csv
-├── 02_usage_vs_anxiety.csv
-├── 03_usage_vs_sleep.csv
-├── 04_platform_mental_health.csv
-├── 05_usage_groups_distribution.csv
-```
-
-These datasets include variables such as:
-- Daily time spent on social media  
-- Anxiety and depression scores  
-- Demographic variables (where available)
-
-## Data Approach
-
-Due to the absence of a shared unique identifier, both datasets were analyzed separately. Insights were then compared at an aggregate level to identify consistent patterns.
-
-## Methodology
-
-The analysis was conducted using:
-
-- Python (Pandas, Matplotlib / Seaborn)
-- Exploratory Data Analysis (EDA)
-- Grouping and segmentation (usage levels)
-- Visualization of relationships between variables
-
-## 📊 Key Visualizations
-
-### Social Media Usage vs Anxiety
-![Usage vs Anxiety](figures/usage_vs_anxiety.png)
-
-### Mental Health by Usage Group
-![Usage Groups](figures/usage_groups_boxplot.png)
-
-### Distribution of Social Media Usage
-![Usage Distribution](figures/usage_distribution.png)
-
-## Key Insights
-
-- Higher social media usage is associated with increased anxiety levels  
-- Users with higher daily usage show greater variability in mental health indicators  
-- Moderate usage groups tend to display more stable patterns  
-
-## Conclusion
-
-The analysis suggests a relationship between increased social media usage and negative mental health indicators. While causality cannot be established, the observed patterns highlight the importance of monitoring digital behavior in younger populations.
-
-## 📌 Recommendations
-
-- Encourage awareness of daily social media usage habits  
-- Promote digital well-being initiatives in educational environments  
-- Develop strategies to support students with high usage patterns  
-- Explore interventions focused on balanced digital consumption  
-
-## ▶️ How to Run
-1. Clone the repository  
-2. Open the notebook in Jupyter Notebook or JupyterLab  
-3. Run all cells to reproduce the analysis  
-
-
-## 📁 Project Structure
-
-```
-├── data/                  # Raw datasets
-├── figures/               # Generated visualizations
-├── notebooks/             # Jupyter notebooks
-│   └── analysis.ipynb
+├── data/
+│   └── Teen_Mental_Health_Dataset.csv
+│
+├── notebook/
+│   └── Teen_Mental_Health_EDA.ipynb
+│
+├── presentation/
+│   └── Executive_Summary.pdf
+│
+├── images/
+│   └── (optional visualizations)
+│
 ├── README.md
+└── requirements.txt
 ```
 
-## Tools Used
+---
 
-- Python (Pandas, Matplotlib, Seaborn)  
-- SQL (for data exploration)  
+## Future Improvements
 
-## 👤 About Me
+Potential extensions of this project include:
 
-Data analyst with a background in design, innovation, and higher education. Experienced in working within Scrum teams and innovation departments, focusing on improving the student experience through data-driven insights.
+- Multiple Linear Regression
+- Classification Models for Depression Prediction
+- Statistical Hypothesis Testing
+- Interactive Dashboard in Power BI
+- Feature Importance Analysis
+- Model Explainability
 
-I have contributed to initiatives that optimize processes across the student journey, from enrollment to graduation, leveraging data analysis for strategic and innovative decision-making.
+---
 
-Currently building projects using SQL, Python, and data visualization to strengthen my ability to solve real-world business problems and support data-driven strategies.
+## Author
+
+**Ernesto Gutiérrez**
+
+Data Analytics | Python | SQL | Power BI | Machine Learning
+
+LinkedIn: *(add your profile here)*
+
+GitHub: *(add your GitHub profile here)*
